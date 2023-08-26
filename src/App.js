@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import AboutUs from './Screens/AboutUs';
+import ContactUs from './Screens/ContactUs';
+import ContactForm from './Screens/ContactForm';
+import { Route, Switch } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
+import Services from './Screens/Services';
+import NotFound from './Screens/NotFound';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Header/>
+        <div className="row justify-content-start m-0 p-0">
+          <div className="col col-2 justify-content-start m-0 p-0">
+            <Sidebar/>
+          </div>
+          <div className="col align-self-start m-0 p-0">
+            <Switch>
+              <Route path="/about" component = {AboutUs} />
+              <Route path="/services" component={Services} />
+              <Route path="/ContactUs"> <ContactForm title="Contact Us"/></Route>
+             <Route component={NotFound}/>
+            </Switch>
+          </div>
+        </div>
+
+      </BrowserRouter>
     </div>
   );
 }
