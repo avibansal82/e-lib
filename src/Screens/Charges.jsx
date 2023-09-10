@@ -1,15 +1,50 @@
-function Charges(){
-    return(<>
-    <div style={{textAlign: "left"}}>
-        <h3>Membership charges</h3>
-       <h5>yearly Membership</h5><p>650 Rs</p><br/>
-       <p>any !00 Rs for renewal of membership every year</p><br/>
-       <h5>Life Time Membership</h5><p>2100 Rs</p><br/>
-       <h5>Institutional Membership</h5><p>5100 Rs</p><br/><p>Any Institute(like Schools, Collages and Coaching Classes) can provide mempership to its studends and workers.</p>
-     </div>  
-
-
-    </>);
+function Charges() {
+  return (
+    <div style={membershipStyle}>
+      <h3 style={headingStyle}>Membership Charges</h3>
+      <div>
+        <h4 style={subHeadingStyle}>Yearly Membership</h4>
+        <p style={priceStyle}>650 Rs</p>
+        <p>Additional 100 Rs for renewal of membership every year</p>
+      </div>
+      <div>
+        <h4 style={subHeadingStyle}>Life Time Membership</h4>
+        <p style={priceStyle}>2100 Rs</p>
+      </div>
+      <div>
+        <h4 style={subHeadingStyle}>Institutional Membership</h4>
+        <p style={priceStyle}>5100 Rs</p>
+        <p>
+          Any Institute (like Schools, Colleges, and Coaching Classes) can
+          provide membership to its students and workers.
+        </p>
+      </div>
+    </div>
+  );
 }
 
-export default Charges
+const membershipStyle = {
+  textAlign: "left",
+  padding: "20px",
+  border: "1px solid #ccc",
+  backgroundColor: "#f5f5f5",
+  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+};
+
+const headingStyle = {
+  color: "#007acc",
+};
+
+const subHeadingStyle = {
+  color: "#333",
+};
+
+const priceStyle = {
+  fontWeight: "bold",
+};
+
+// const contentStyle = {
+//   color: "#666",
+// };
+
+export default Charges;

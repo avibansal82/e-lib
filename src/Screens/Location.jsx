@@ -9,7 +9,8 @@ function Location() {
                     height="400"
                     style={{ border: 0 }}
                     allowfullscreen=""
-                    loading="lazy">
+                    loading="lazy"
+                    title="library location">
                 </iframe>
             </div>
             <div className="col d-flex flex-column  align-items-start">

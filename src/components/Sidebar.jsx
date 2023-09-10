@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../logo.svg'
+// import logo from '../logo.svg'
 import "../App.css"
 import { NavLink } from "react-router-dom";
 
@@ -10,10 +10,6 @@ function Sidebar() {
                 <li className="list-group-item nav-iem p-0 ">
                     <NavLink className="nav-link" to="/about"     activeClassName="active">About us</NavLink>
                 </li>
-               
-                <li className="list-group-item nav-item p-0">
-                    <NavLink className="nav-link" to="/contactUs"  activeClassName="active">Contact Us</NavLink>
-                </li>
                 <li className="list-group-item nav-item p-0">
                     <NavLink className="nav-link" to="/serchbook" activeClassName="active">Search Books</NavLink>
                 </li>
@@ -23,14 +19,20 @@ function Sidebar() {
                 <li className="list-group-item nav-item p-0">
                     <NavLink className="nav-link" to="/rules"      activeClassName="active">Library Rules</NavLink>
                 </li>
+                {/* <li className="list-group-item nav-item p-0">
+                    <NavLink className="nav-link" to="/libraries"  activeClassName="active">Other Libraries</NavLink>
+                </li> */}
                 <li className="list-group-item nav-item p-0">
                     <NavLink className="nav-link" to="/donation"   activeClassName="active">Donation</NavLink>
                 </li>
                 <li className="list-group-item nav-item p-0">
-                    <NavLink className="nav-link" to="/libraries"  activeClassName="active">Other Libraries</NavLink>
+                    <NavLink className="nav-link" to="/contactUs"  activeClassName="active">Contact Us</NavLink>
                 </li>
                 <li className="list-group-item nav-item p-0">
                     <NavLink className="nav-link" to="/feedback"   activeClassName="active">Feedback</NavLink>
+                </li>
+                <li className="list-group-item nav-item p-0">
+                    <NavLink className="nav-link" to="/admin"  activeClassName="active">Admin</NavLink>
                 </li>
             </ul>
 

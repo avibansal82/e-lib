@@ -6,9 +6,9 @@ function Header() {
     return (
         <nav class="navbar navbar-expand-lg navbar-light" >
             <div class="container-fluid d-flex">
-            <a class="navbar-brand" href="#">
+            <button class="navbar-brand" >
                     <img src={logo} alt="" width="50" height="50"/>
-                   </a>
+                   </button>
                 <div class=" justify-content-end" id="navbarText">
                     {/* <ul class="nav nav-pills ">
                     <li class="nav-item">
